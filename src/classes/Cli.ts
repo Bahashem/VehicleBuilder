@@ -304,7 +304,7 @@ class Cli {
           (vehicle) => vehicle.vin === this.selectedVehicleVin
         );
         if (selectedTruck instanceof Truck) {
-          if(selctedVehicleToTow?.vin === selectedTruck.vin){
+          if(selectedVehicleToTow?.vin === selectedTruck.vin){
             console.log("A truck cannot tow itself. Please select another vehicle.");
             this.performActions();
             return;
@@ -315,7 +315,7 @@ class Cli {
           this.performActions();
           }else{
           console.log("Only trucks can tow vehicles.");
-        this.performActions();}
+        this.performActions();
         }
           
 
@@ -420,7 +420,7 @@ class Cli {
           }
         }else if (answers.action === 'Perform a wheelie'){
           for (let i=0; i<this.vehicles.length; i++){
-            if(this.vehicles[i].vin ===this.selectdVin && this.vehicles [i] instanceof Motorbike){
+            if(this.vehicles[i].vin ===this.selectedVehicleVin && this.vehicles [i] instanceof Motorbike){
               console.log(`${this.vehicles[i].make} ${this.vehicles[i].model} is doing a wheelie!`);
             }
           }
