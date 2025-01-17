@@ -1,5 +1,5 @@
 Bento Box README
-License:MIT
+License:NONE
 
 Description
 Class projet
@@ -17,7 +17,7 @@ Contribution
 Nope
 
 License
-This project is licensed under the Apache License 2.0.
+This project is not under a licensed.
 
 Tests
 None developed
